@@ -1,0 +1,24 @@
+c_monitors:
+  - network: mainnet
+    name: test
+    address: 0x722122dF12D4e14e13Ac3b6895a86e84145b6967
+    abi: xxx(暂支持验证过的合约)
+    events:
+      - event:
+          name: OwnershipTransferred
+          alert_level: Critical
+          alert_url: https://open.larksuite.com/open-apis/bot/v2/hook/xxxxxxxxxxxxxxxxx
+          alert_type: lark
+    methods:
+      - method:
+          name: newVersion...
+          method_id: 0x123123123
+          alert_level: Info
+          alert_url: https://open.larksuite.com/open-apis/bot/v2/hook/xxxxxxxxxxxxxxxxx
+          alert_type: lark
+      - method:
+          name: transferOwnership(address newOwner)
+          method_id: 0xf2fde38b
+          alert_level: Critical
+          alert_url: https://open.larksuite.com/open-apis/bot/v2/hook/xxxxxxxxxxxxxxxxx
+          alert_type: lark
